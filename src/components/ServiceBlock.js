@@ -20,7 +20,7 @@ export default ({ ...props }) => (
   <ServiceBlock>
     <IconService image={props.icon } />
     <p>
-      {props.text }
+      {props.text}
     </p>
   </ServiceBlock>
 )
