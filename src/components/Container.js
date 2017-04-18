@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   width: 95%;
-  max-width: 780px;
+  max-width: 900px;
   margin: 0 auto;
   ${props => props.center ? 'text-align: center;' : null}
 `

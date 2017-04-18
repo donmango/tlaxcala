@@ -6,8 +6,9 @@ const BtnService = styled.a`
   font-size: 18px;
   color: #FFFFFF;
   cursor: pointer;
-  margin: 0 auto;
-  max-width: 150px;
+  display: inline-block;
+  max-width: 235px;
+  margin-bottom: 1.5em;
   border: 0;
   box-shadow: 0 3px 0 0 #9E160C;
   padding: 10px 50px;

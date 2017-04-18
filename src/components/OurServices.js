@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-export default styled.header`
+export default styled.section`
   align-items: center;
-  background: url(./images/background-header.jpg);
+  background: #FFFFFF;
   display: flex;
   padding: 6em 0;
 `
