@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import IconService from './IconService';
+import IconService from './IconService'
 
 const ServiceBlock = styled.div`
   display: inline-block;
@@ -18,7 +18,7 @@ const ServiceBlock = styled.div`
 
 export default ({ ...props }) => (
   <ServiceBlock>
-    <IconService image={props.icon } />
+    <IconService image={props.icon} />
     <p>
       {props.text}
     </p>

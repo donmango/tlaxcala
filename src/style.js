@@ -6,7 +6,7 @@ const Css = `
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: 'Nunito Sans', sans-serif;
   background-color: #f4f4f4;
   color: rgba(74,74,74,.94);
   line-height: 1.5;

@@ -1,69 +1,30 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
 // Global CSS and Head Situation
-import Helmet from 'react-helmet';
-import './App.css';
-import TlaxcalaShield from './tlaxcala-shield.png';
-import DescImage from './desc-image.jpg';
+import Helmet from 'react-helmet'
+import './App.css'
+import TlaxcalaShield from './tlaxcala-shield.png'
+import DescImage from './desc-image.jpg'
 
-import Css from './style';
-import Container from './components/Container';
-import Shield from './components/Shield';
-import Header from './components/Header';
-import HeadTitle from './components/HeadTitle';
-import BtnService from './components/BtnService';
-import WhoWeAre from './components/WhoWeAre';
-import Description from './components/Description';
-import FtImage from './components/FtImage';
-import OurServices from './components/OurServices';
-import ServiceBlock from './components/ServiceBlock';
-
-const services = [
-  {
-    icon: '/images/sheet.png',
-    text: 'Corrección y alta de CURP'
-  },
-  {
-    icon: '/images/mail.png',
-    text: 'Expedición y/o envío a domicilio de Copias Certificadas de Actas'
-  },
-  {
-    icon: '/images/chat.png',
-    text: 'Aclaraciones Administrativas'
-  },
-  {
-    icon: '/images/scales.png',
-    text: 'Legalización de Firmas'
-  },
-  {
-    icon: '/images/signal.png',
-    text: 'Divorcios Administrativos'
-  },
-  {
-    icon: '/images/comment.png',
-    text: 'Anotaciones Marginales de sentencias y/o Aclaraciones Administrativas'
-  },
-  {
-    icon: '/images/book.png',
-    text: 'Constancia de no registro'
-  },
-  {
-    icon: '/images/search.png',
-    text: 'Búsqueda histórica'
-  },
-  {
-    icon: '/images/fly.png',
-    text: 'Expedición de copia certificada de resolución de aclaración administrativa de años anteriores'
-  },
-];
+import Css from './style'
+import Container from './components/Container'
+import Shield from './components/Shield'
+import Header from './components/Header'
+import HeadTitle from './components/HeadTitle'
+import BtnService from './components/BtnService'
+import WhoWeAre from './components/WhoWeAre'
+import Description from './components/Description'
+import FtImage from './components/FtImage'
+import OurServices from './components/OurServices'
+import Services from './components/Services'
 
 class App extends Component {
-  render() {
+  render () {
     return (
       <main>
         <Helmet style={[
             {type: 'text/css', cssText: Css}
-          ]}
+        ]}
           titleTemplate={`%s | TRÁMITES Y SERVICIOS COORDINADOS DEL REGISTRO CIVIL DE TLAXCALA`}
         />
         <Header>
@@ -87,14 +48,12 @@ class App extends Component {
         </WhoWeAre>
         <OurServices>
           <Container>
-            {services.map((service, i) => (
-              <ServiceBlock key={i} {...service} />
-            ))}
+            <Services />
           </Container>
         </OurServices>
       </main>
-    );
+    )
   }
 }
 
-export default App;
+export default App
