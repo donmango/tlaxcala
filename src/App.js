@@ -17,6 +17,8 @@ import Description from './components/Description'
 import FtImage from './components/FtImage'
 import OurServices from './components/OurServices'
 import Services from './components/Services'
+import ContactForm from './components/ContactForm'
+import Form from './components/Form'
 
 class App extends Component {
   render () {
@@ -51,6 +53,11 @@ class App extends Component {
             <Services />
           </Container>
         </OurServices>
+        <ContactForm>
+          <Container center>
+            <Form />
+          </Container>
+        </ContactForm>
       </main>
     )
   }

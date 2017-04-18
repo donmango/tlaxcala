@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+import ServiceTitle from './ServiceTitle'
 import ServiceBlock from './ServiceBlock'
 
 const Services = styled.div`
@@ -48,6 +49,9 @@ const services = [
 
 export default ({ ...props }) => (
   <Services>
+    <ServiceTitle>
+      Nuestros Servicios
+    </ServiceTitle>
     {services.map((service, i) => (
       <ServiceBlock key={i} {...service} />
     ))}
