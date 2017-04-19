@@ -4,5 +4,5 @@ export default styled.section`
   align-items: center;
   background: #FFFFFF;
   display: flex;
-  padding: 6em 0;
+  padding: 3em 0;
 `

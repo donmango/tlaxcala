@@ -5,6 +5,9 @@ import Helmet from 'react-helmet'
 import './App.css'
 import TlaxcalaShield from './tlaxcala-shield.png'
 import DescImage from './desc-image.jpg'
+import MailIcon from './mail-icon.png'
+import TlaxcalaMiniShield from './tlaxcala-shield-mini.png'
+import PhoneIcon from './phone-icon.png'
 
 import Css from './style'
 import Container from './components/Container'
@@ -21,6 +24,10 @@ import ContactForm from './components/ContactForm'
 import Form from './components/Form'
 import RealTestimonials from './components/RealTestimonials'
 import Testimonials from './components/Testimonials/index'
+import Footer from './components/Footer'
+import Mail from './components/Mail'
+import MiniShield from './components/MiniShield'
+import Phone from './components/Phone'
 
 class App extends Component {
   render () {
@@ -65,6 +72,13 @@ class App extends Component {
             <Testimonials />
           </Container>
         </RealTestimonials>
+        <Footer>
+          <Container center>
+            <Mail image={MailIcon} />
+            <MiniShield image={TlaxcalaMiniShield} />
+            <Phone image={PhoneIcon} />
+          </Container>
+        </Footer>
       </main>
     )
   }
