@@ -19,6 +19,8 @@ import OurServices from './components/OurServices'
 import Services from './components/Services'
 import ContactForm from './components/ContactForm'
 import Form from './components/Form'
+import RealTestimonials from './components/RealTestimonials'
+import Testimonials from './components/Testimonials/index'
 
 class App extends Component {
   render () {
@@ -58,6 +60,11 @@ class App extends Component {
             <Form />
           </Container>
         </ContactForm>
+        <RealTestimonials>
+          <Container center>
+            <Testimonials />
+          </Container>
+        </RealTestimonials>
       </main>
     )
   }
