@@ -8,12 +8,12 @@ const TestimonialBlock = styled.article`
   height: 260px;
   text-align: left;
   margin-right: 1.5em;
-  width: 420px;
+  width: 45%;
   vertical-align: top;
 
   .content{
     display: inline-block;
-    width: 260px;
+    width: calc(100% - 156px);
   }
 
   .content p{
@@ -21,8 +21,26 @@ const TestimonialBlock = styled.article`
     display: inline-block;
     line-height: 1em;
     margin: 0 0 2em 0;
-    width: 260px;
+    width: 100%;
     vertical-align: top;
+  }
+
+  /* Small Devices, Tablets */
+  @media only screen and (max-width : 768px) {
+    .content p{
+      font-size: 0.85em;
+    }
+  }
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width : 480px){
+    height: auto;
+    margin: 0 0 2em 0;
+    width: 95%;
+
+    .content p{
+      margin-bottom: 1em;
+    }
   }
 `
 

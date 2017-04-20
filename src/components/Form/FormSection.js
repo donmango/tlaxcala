@@ -5,4 +5,9 @@ export default styled.div`
  padding: 0 1em;
  text-align: left;
  ${props => props.half ? 'width: 50%;' : 'width: 100%;'}
+
+ /* Extra Small Devices, Phones */ 
+ @media only screen and (max-width : 480px){
+   width: 100%;
+ }
 `

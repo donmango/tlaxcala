@@ -5,7 +5,7 @@ import ServiceTitle from './ServiceTitle'
 import ServiceBlock from './ServiceBlock'
 
 const Services = styled.div`
-
+  text-align: center;
 `
 
 const services = [

@@ -10,6 +10,12 @@ const FtImage = styled.div`
   background-position: center;
   background-image: url(${props => props.image});
   vertical-align: top;
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width : 480px){
+    display: block;
+    margin: 0 auto;
+  }
 `
 
 export default FtImage

@@ -10,6 +10,16 @@ const Avatar = styled.div`
   background-position: center;
   background-image: url(${props => props.image});
   vertical-align: top;
+
+  @media only screen and (max-width : 768px){
+    margin: 0 5em;
+  }
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width : 480px){
+    display: block;
+    margin: 0 auto;
+  }
 `
 
 export default Avatar

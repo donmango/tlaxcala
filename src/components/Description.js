@@ -8,5 +8,13 @@ const Description = styled.p`
   font-weight: 300;
   margin: 1em 2em 0 0;
   width: calc(100% - 390px);
+
+  /* Extra Small Devices, Phones */ 
+  @media only screen and (max-width : 480px){
+    display: block;
+    margin-bottom: 1em;
+    text-align: center;
+    width: 100%;
+  }
 `
 export default Description
