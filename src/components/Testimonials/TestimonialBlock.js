@@ -38,6 +38,10 @@ const TestimonialBlock = styled.article`
     margin: 0 0 2em 0;
     width: 95%;
 
+    .content{
+      width: calc(100% - 86px);
+    }
+
     .content p{
       margin-bottom: 1em;
     }

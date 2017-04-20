@@ -12,8 +12,10 @@ const IconService = styled.div`
   /* Extra Small Devices, Phones */ 
   @media only screen and (max-width : 480px){
     display: inline-block;
+    height: 70px;
     margin: 0 2em 0 0;
     vertical-align: middle;
+    width: 70px;
   }
 `
 
