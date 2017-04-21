@@ -28,7 +28,7 @@ const Form = props => {
     <FormContext>
       Cuéntenos su problema y nosotros nos preocuparemos por resolverlo! Deje sus datos  y uno de nuestros asesores de manera inmediata, se pondrá en contacto con usted.
     </FormContext>
-    <FormContainer>
+    <FormContainer action='/' >
        <FormSection half>
           <Input
           	label='Nombre y Apellidos'

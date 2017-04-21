@@ -21,7 +21,7 @@ import FtImage from './components/FtImage'
 import OurServices from './components/OurServices'
 import Services from './components/Services'
 import ContactForm from './components/ContactForm'
-import Form from './components/Form'
+import FormHandler from './components/Form/FormHandler'
 import RealTestimonials from './components/RealTestimonials'
 import Testimonials from './components/Testimonials/index'
 import Footer from './components/Footer'
@@ -64,7 +64,7 @@ class App extends Component {
         </OurServices>
         <ContactForm>
           <Container center>
-            <Form />
+            <FormHandler />
           </Container>
         </ContactForm>
         <RealTestimonials>
