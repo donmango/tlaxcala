@@ -24,7 +24,7 @@ const Phone = styled.div`
 
 export default ({ ...props }) => (
   <Phone>
-    <img src={props.image} />
+    <img src={props.image} alt="Phone" />
     <p>
       <a href='tel:045-246-220-9429'>045-246-220-9429</a>
     </p>

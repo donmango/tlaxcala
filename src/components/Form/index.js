@@ -17,6 +17,9 @@ const Form = props => {
   let {
     onSubmit,
     nameValue,
+    curpValue,
+    phoneValue,
+    emailValue,
     messageValue,
     inputHandler
   } = props
@@ -28,7 +31,7 @@ const Form = props => {
     <FormContext>
       Cuéntenos su problema y nosotros nos preocuparemos por resolverlo! Deje sus datos  y uno de nuestros asesores de manera inmediata, se pondrá en contacto con usted.
     </FormContext>
-    <FormContainer action='/'>
+    <FormContainer onSubmit={onSubmit}>
        <FormSection half>
           <Input
           	label='Nombre y Apellidos'
@@ -45,7 +48,7 @@ const Form = props => {
             name='curp'
             type='text'
             placeholder=''
-            value={nameValue}
+            value={curpValue}
             onChange={inputHandler}
           />
        </FormSection>
@@ -55,7 +58,7 @@ const Form = props => {
             name='phone'
             type='number'
             placeholder=''
-            value={nameValue}
+            value={phoneValue}
             onChange={inputHandler}
           />
        </FormSection>
@@ -65,7 +68,7 @@ const Form = props => {
             name='email'
             type='email'
             placeholder=''
-            value={nameValue}
+            value={emailValue}
             onChange={inputHandler}
           />
        </FormSection>

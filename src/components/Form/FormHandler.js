@@ -4,22 +4,28 @@ import 'whatwg-fetch'
 
 //const endPoint = process.env.REACT_APP_BOT_ENDPOINT
 //const destinataryID = process.env.REACT_APP_TG_USER
-//const url = `https://api.telegram.org/bot${endPoint}/sendMessage`
+const url = `https://formspree.io/hola@wavecode.la`
 
 class FormHandler extends React.Component {
 
   state = {
     name: '',
+    curp: '',
+    phone: '',
+    email: '',
     message: '',
   }
 
   submitHandler = event => {
     event.preventDefault()
-    let request = fetch('', {
+    let request = fetch(url, {
       method: 'POST',
       body: JSON.stringify({
-        chat_id: '',
-        text: ''
+        name: this.state.name,
+        curp: this.state.curp,
+        phone: this.state.phone,
+        email: this.state.email,
+        message: this.state.message,
       }),
       headers: {
         'Content-Type': 'application/json'
@@ -29,6 +35,9 @@ class FormHandler extends React.Component {
     .then( result => {
       this.setState({
         name: '',
+        curp: '',
+        phone: '',
+        email: '',
         message: ''
       })
     })
@@ -49,6 +58,9 @@ class FormHandler extends React.Component {
     return (
       <Form
         nameValue={this.state.name}
+        curpValue={this.state.curp}
+        phoneValue={this.state.phone}
+        emailValue={this.state.email}
         messageValue={this.state.message}
         inputHandler={this.inputChangeHandler}
         onSubmit={this.submitHandler}

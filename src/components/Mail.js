@@ -24,7 +24,7 @@ const Mail = styled.div`
 
 export default ({ ...props }) => (
   <Mail>
-    <img src={props.image} />
+    <img src={props.image} alt="Mail" />
     <p>
       <a href='mailto:tramitlax@hotmail.com'>tramitlax@hotmail.com</a>
     </p>
