@@ -6,5 +6,6 @@ const FormContext = styled.p`
   line-height: 1.5em;
   margin-bottom: 2em;
   text-align: center;
+  ${props => props.display ? 'display: none;' : ''}
 `
 export default FormContext

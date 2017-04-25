@@ -7,6 +7,7 @@ const FormTitle = styled.h2`
   font-weight: 300;
   margin-top: 0.5em;
   margin-bottom: 1em;
+  ${props => props.display ? 'display: none;' : ''}
 
   /* Extra Small Devices, Phones */ 
   @media only screen and (max-width : 480px){

@@ -8,30 +8,43 @@ import FormSection from './FormSection'
 import Input from './Input'
 import TextArea from './TextArea'
 import SubmitBtn from './SubmitBtn'
+import ThanksMessage from './ThanksMessage'
+import CheckFormMessage from './CheckFormMessage'
+import ErrorMessage from './ErrorMessage'
 
 const FormInit = styled.div`
-
 `
 
 const Form = props => {
   let {
-    onSubmit,
     nameValue,
     curpValue,
     phoneValue,
     emailValue,
     messageValue,
-    inputHandler
+    statusValue,
+    errorValue,
+    inputHandler,
+    onSubmit,
   } = props
   return (
-  <FormInit>
-    <FormTitle>
+  <FormInit name="#contact-form" id="#contact-form">
+    <ThanksMessage display={statusValue}>
+      Gracias por usar nuestro servicio
+    </ThanksMessage>
+    <FormTitle display={statusValue}>
       Contáctenos
     </FormTitle>
-    <FormContext>
+    <FormContext display={statusValue}>
       Cuéntenos su problema y nosotros nos preocuparemos por resolverlo! Deje sus datos  y uno de nuestros asesores de manera inmediata, se pondrá en contacto con usted.
     </FormContext>
-    <FormContainer onSubmit={onSubmit}>
+    <ErrorMessage>
+      {errorValue}
+    </ErrorMessage>
+    <CheckFormMessage display={statusValue}>
+      Por favor llena todos los campos correctamente
+    </CheckFormMessage>
+    <FormContainer action="#contact-form" onSubmit={onSubmit} display={statusValue}>
        <FormSection half>
           <Input
           	label='Nombre y Apellidos'

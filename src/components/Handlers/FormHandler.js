@@ -14,6 +14,8 @@ class FormHandler extends React.Component {
     phone: '',
     email: '',
     message: '',
+    status: '',
+    error: '',
   }
 
   submitHandler = event => {
@@ -31,7 +33,11 @@ class FormHandler extends React.Component {
         'Content-Type': 'application/json'
       }
     })
-    request.then( response => response.json() )
+    request.then( response => {
+      this.setState({
+        status: response.ok
+      })
+    })
     .then( result => {
       this.setState({
         name: '',
@@ -39,6 +45,11 @@ class FormHandler extends React.Component {
         phone: '',
         email: '',
         message: ''
+      })
+    })
+    .catch( err => {
+      this.setState({
+        error: 'Error al enviar el mail, intente nuevamente.'
       })
     })
   }
@@ -62,6 +73,8 @@ class FormHandler extends React.Component {
         phoneValue={this.state.phone}
         emailValue={this.state.email}
         messageValue={this.state.message}
+        statusValue={this.state.status}
+        errorValue={this.state.error}
         inputHandler={this.inputChangeHandler}
         onSubmit={this.submitHandler}
       />
