@@ -26,7 +26,7 @@ export default ({ ...props }) => (
   <Phone>
     <img src={props.image} alt="Phone" />
     <p>
-      <a href='tel:045-246-220-9429'>045-246-220-9429</a>
+      <a href='tel:045-246-220-9429'>045 (246) 220 94 29</a>
     </p>
   </Phone>
 )
