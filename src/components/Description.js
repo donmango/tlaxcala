@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const Description = styled.p`
   color: #FFFFFF;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.25em;
   line-height: 1.2em;
   font-weight: 300;
   margin: 1em 2em 0 0;
@@ -15,6 +15,7 @@ const Description = styled.p`
     margin-bottom: 1em;
     text-align: center;
     width: 100%;
+    font-size: 1em;
   }
 `
 export default Description
