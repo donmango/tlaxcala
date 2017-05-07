@@ -4,7 +4,7 @@ import 'whatwg-fetch'
 
 //const endPoint = process.env.REACT_APP_BOT_ENDPOINT
 //const destinataryID = process.env.REACT_APP_TG_USER
-const url = `https://formspree.io/hola@wavecode.la`
+const url = `https://formspree.io/rommelmatteo01@gmail.com`
 
 class FormHandler extends React.Component {
 
