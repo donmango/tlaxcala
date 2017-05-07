@@ -5,8 +5,8 @@
   "dependencies": {
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
-    "react-helmet": "4",
-    "react-router-dom": "next",
+    "react-helmet": "^5.0.3",
+    "react-router-dom": "^4.1.1",
     "react-snapshot": "^1.0.4",
     "styled-components": "^1.4.4"
   },
