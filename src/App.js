@@ -35,9 +35,7 @@ class App extends Component {
   render () {
     return (
       <main>
-        <Helmet
-          titleTemplate={`%s | TRÁMITES Y SERVICIOS COORDINADOS DEL REGISTRO CIVIL DE TLAXCALA`}
-        />
+        <Helmet title='TRÁMITES Y SERVICIOS COORDINADOS DEL REGISTRO CIVIL DE TLAXCALA' />
         <Header>
           <Container center>
             <Shield image={TlaxcalaShield} />
