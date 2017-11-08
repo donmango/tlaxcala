@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 // Global CSS and Head Situation
 import Helmet from 'react-helmet'
-import './App.css'
 import TlaxcalaShield from './tlaxcala-shield.png'
 import DescImage from './desc-image.jpg'
 import MailIcon from './mail-icon.png'
@@ -30,12 +29,13 @@ import MiniShield from './components/MiniShield'
 import Phone from './components/Phone'
 
 class App extends Component {
+  componentWillMount () {
+    Css()
+  }
   render () {
     return (
       <main>
-        <Helmet style={[
-            {type: 'text/css', cssText: Css}
-        ]}
+        <Helmet
           titleTemplate={`%s | TRÁMITES Y SERVICIOS COORDINADOS DEL REGISTRO CIVIL DE TLAXCALA`}
         />
         <Header>
@@ -74,9 +74,11 @@ class App extends Component {
         </RealTestimonials>
         <Footer>
           <Container center>
-            <Mail image={MailIcon} />
+            <Phone image={PhoneIcon} stylednum='246 46 61544' number='2464661544' />
             <MiniShield image={TlaxcalaMiniShield} />
-            <Phone image={PhoneIcon} />
+            <Phone image={PhoneIcon} stylednum='246 198 5171' number='2461985171' />
+            <Mail image={MailIcon} />
+            <p className='address'>Avenida Juarez #5, interior 1-A, Colonia Centro, Tlaxcala, Tlax.</p>
           </Container>
         </Footer>
       </main>

@@ -22,11 +22,11 @@ const Phone = styled.div`
     }
 `
 
-export default ({ ...props }) => (
+export default ({number, stylednum, ...props }) => (
   <Phone>
     <img src={props.image} alt="Phone" />
     <p>
-      <a href='tel:045-246-220-9429'>045 (246) 220 94 29</a>
+      <a href={`tel:${number}`}>{stylednum}</a>
     </p>
   </Phone>
 )

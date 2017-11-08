@@ -5,4 +5,9 @@ export default styled.section`
   background: #304760;
   display: flex;
   padding: 1em 0;
+  color: #fff;
+
+  .address {
+    margin-bottom: 0;
+  }
 `
